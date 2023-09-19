@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StackDefinition>
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Data.Toaster"
+    Name="Symbotic Data Toaster 1.0.0.1091"
+    DisplayName="Toaster"
+    Version="1.0.0.1091"
+    Hostname="toaster01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+ <Component
+    ItemType="Application"
+    PackageId="Symbotic.Messaging.Proxy"
+    Name="Symbotic.MessagingProxy.Host.WinConsole.exe"
+    DisplayName="MessagingProxy"
+    Version="5.2.400.249"
+    Hostname="toaster01.mselect.abs6621-a.symbotic"
+    Location="E:\Program Files\Symbotic\Messaging Proxy 5.2.520"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.DS.Service"
+    Name="Symbotic Data Services 5.2.520.12679"
+    DisplayName="ODS"
+    Version="5.2.520.12679"
+    Hostname="ods01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Baker.Service"
+    Name="Symbotic Baker Service 5.2.400.1346"
+    DisplayName="Baker Service"
+    Version="5.2.400.1346"
+    Hostname="baker01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Case.Storage.Service"
+    Name="Symbotic Case Storage Service 5.2.595.981"
+    DisplayName="Case Storage Service"
+    Version="5.2.595.981"
+    Hostname="sre01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />	
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.System.Manager"
+    Name="Symbotic System Manager 25.2.520.2628"
+    DisplayName="System Manager"
+    Version="25.2.520.2628"
+    Hostname="sm01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Application"
+    PackageId="Symbotic.Control.Center"
+    Name="ControlCenter.exe"
+    DisplayName="Control Center"
+    Version="5.2.520.11101"
+    Hostname="localhost"
+    Location="C:\Program Files\Symbotic\Control Center 5.2.595"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP01"
+    Version="21.4.1.473"
+    Hostname="pbp01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP02"
+    Version="21.4.1.473"
+    Hostname="pbp02.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP03"
+    Version="21.4.1.473"
+    Hostname="pbp03.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP04"
+    Version="21.4.1.473"
+    Hostname="pbp04.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP05"
+    Version="21.4.1.473"
+    Hostname="pbp05.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 21.4.1.473"
+    DisplayName="PBP06"
+    Version="21.4.1.473"
+    Hostname="pbp06.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Sequencer"
+    Name="Symbotic Pallet Sequencer 11.1.1.1354"
+    DisplayName="Pallet Sequencer"
+    Version="11.1.1.1354"
+    Hostname="pseq01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId=""
+    Name="Symbotic Case Parameter Input 5.2.350.1141"
+    DisplayName="CPI Service"
+    Version="5.2.350.1141"
+    Hostname="cpi01.mselect.abs6621-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+</StackDefinition>

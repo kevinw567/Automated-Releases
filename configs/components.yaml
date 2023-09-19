@@ -1,0 +1,207 @@
+# use '!!str' to force numbers to be read as strings if they are being read as times
+
+---
+
+# new SiteConfigs version
+newSiteConfigsVersion: 
+# the folder containing the previous version of the Startup Tool XML
+oldVersion: !!str 
+components:
+    # Baker Service V
+    - name: Baker
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: baker01
+        service_name: Symbotic Baker Service {0}
+
+    # Case Parameter Input Service V
+    - name: Case Parameter Input
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        server:
+          type: service
+          vm: cpi01
+          service_name: Symbotic Case Parameter Input {0}
+        # configs for client app
+        client:
+          type: app
+          vm: teach01
+          appDestination: C:\Users\teachinuser\Desktop
+          path: C:\Program Files\Symbotic\Case Parameter Input {0}\Client
+
+    # Case Storage Service V
+    - name: Case Storage Service
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: sre01
+        service_name: Symbotic Case Storage Service {0}
+
+    # Control Center V
+    - name: ControlCenter
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: localhost
+        appDestination: C:\Users\ccuser\Desktop
+        path: C:\Program Files\Symbotic\Control Center {0}
+
+    # Data Services V
+    - name: Data Services
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: ods01
+        service_name: Symbotic Data Services {0}
+
+    # Messaging Proxy V
+    - name: MessagingProxy
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: toaster01
+        path: E:\Program Files\Symbotic\Messaging Proxy {0}
+        options: -disableOnly
+
+    # Pallet Build Planner Service V
+    - name: Pallet Build Planner
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: multiple
+        service_name: Symbotic Pallet Build Planner {0}
+
+    # Pallet Sequencer Service V
+    - name: Pallet Sequencer
+      changed:
+      version:
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: pseq01
+        service_name: Symbotic Pallet Sequencer {0}
+
+    # System Manager Inbound Service V
+    - name: System Manager Inbound
+      changed: 
+      version: 
+      Agent:
+        changed: 
+        version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: sm01
+        service_name: Symbotic System Manager Inbound {0}
+
+    # System manager Outbound Service V
+    - name: System Manager Outbound
+      changed: 
+      version: 
+      Agent:
+        changed: 
+        version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: sm01
+        service_name: Symbotic System Manager Outbound {0}
+
+    # Toaster V
+    - name: Toaster
+      changed:
+      version:
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: toaster01
+        service_name: Symbotic Data Toaster {0}
+
+    # ------------------- Non-Startup Tool Components -------------------
+    # Bot Saver V
+    - name: Bot Saver
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: sre01
+        appDestination: C:\Users\ccuser\Desktop
+        path: C:\Program Files\Symbotic\Bot Saver {0} # E: drive for production
+
+    # Cell Gateways V
+    - name: Cell Gateway
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        service_name: Symbotic Cell Gateway Service {0} (Instance 1)
+
+    # DepalUI  V
+    - name: Depalletization User Interface
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: depalui01
+        path: E:\Program Files\Symbotic\Depalletization User Interfaces {0}\ConfiguredUIs\DualManual {1}
+        shortcut_name: Symbotic {0} Depal UI
+        first_app:
+          name: MIB102
+          appDestination: C:\Users\depalui04_svc\Desktop
+        second_app:
+          name: MIB106
+          appDestination: C:\Users\depalui01_svc\Desktop
+
+    # Integration Manager V
+    - name: Integration Manager
+      changed: 
+      version: !!str
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: service
+        vm: im01
+        service_name: Symbotic Integration Manager Core {0}
+      symlink:
+        location: E:\Program Files\Symbotic\Integration Manager {0}
+        symlink_name: SiteConfigs
+        target: E:\SiteConfigs {0}
+
+    # Label Inquiry V
+    - name: Label Inquiry UI
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: multiple
+        appDestination: C:\Users\liuiuser\Desktop
+        path: C:\Program Files\Symbotic\Label Inquiry Application {0}
+
+    # Pallet Plan Viewer V
+    - name: Pallet Plan Viewer
+      changed: 
+      version: 
+      # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
+      configs:
+        type: app
+        vm: obdisplay01
+        appDestination: C:\Users\Administrator\Desktop
+        path: C:\Program Files\Symbotic\Pallet Plan Viewer {0} # E: for production

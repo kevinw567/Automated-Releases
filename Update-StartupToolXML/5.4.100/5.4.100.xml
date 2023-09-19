@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StackDefinition>
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Data.Toaster"
+    Name="Symbotic Data Toaster 1.0.0.1091"
+    DisplayName="Toaster"
+    Version="1.0.0.1091"
+    Hostname="toaster01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+ <Component
+    ItemType="Application"
+    PackageId="Symbotic.Messaging.Proxy"
+    Name="Symbotic.MessagingProxy.Host.WinConsole.exe"
+    DisplayName="MessagingProxy"
+    Version="5.4.100.307"
+    Hostname="toaster01.mselect.wmt06016-a.symbotic"
+    Location="E:\Program Files\Symbotic\Messaging Proxy 5.4.100.307"
+    IsActive="True" />	
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.DS.Service"
+    Name="Symbotic Data Services 5.4.100.13436"
+    DisplayName="ODS"
+    Version="5.4.100.13436"
+    Hostname="ods01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Baker.Service"
+    Name="Symbotic Baker Service 5.4.100.1520"
+    DisplayName="Baker Service"
+    Version="5.4.100.1520"
+    Hostname="baker01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Case.Storage.Service"
+    Name="Symbotic Case Storage Service 5.4.100.1964"
+    DisplayName="Case Storage Service"
+    Version="5.4.100.1964"
+    Hostname="sre01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />	
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.System.Manager.Inbound"
+    Name="Symbotic System Manager Inbound 5.4.100.2719"
+    DisplayName="System Manager Inbound"
+    Version="5.4.100.2719 Agent: 5.4.100.16"
+    Hostname="sm01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.System.Manager.Outbound"
+    Name="Symbotic System Manager Outbound 5.4.100.2731"
+    DisplayName="System Manager Outbound"
+    Version="5.4.100.2731 Agent: 5.4.100.16"
+    Hostname="sm01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Application"
+    PackageId="Symbotic.Control.Center"
+    Name="ControlCenter.exe"
+    DisplayName="Control Center"
+    Version="5.4.100.11739"
+    Hostname="localhost"
+    Location="C:\Program Files\Symbotic\Control Center 5.4.100.11739"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP01"
+    Version="23.2.0.545"
+    Hostname="pbp01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP02"
+    Version="23.2.0.545"
+    Hostname="pbp02.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP03"
+    Version="23.2.0.545"
+    Hostname="pbp03.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP04"
+    Version="23.2.0.545"
+    Hostname="pbp04.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP05"
+    Version="23.2.0.545"
+    Hostname="pbp05.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP06"
+    Version="23.2.0.545"
+    Hostname="pbp06.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP07"
+    Version="23.2.0.545"
+    Hostname="pbp07.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Build.Planner"
+    Name="Symbotic Pallet Build Planner 23.2.0.545"
+    DisplayName="PBP08"
+    Version="23.2.0.545"
+    Hostname="pbp08.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />	
+  <Component
+    ItemType="Service"
+    PackageId="Symbotic.Pallet.Sequencer"
+    Name="Symbotic Pallet Sequencer 12.4.2.1486"
+    DisplayName="Pallet Sequencer"
+    Version="12.4.2.1486"
+    Hostname="pseq01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+  <Component
+    ItemType="Service"
+    PackageId=""
+    Name="Symbotic Case Parameter Input 5.4.100.1496"
+    DisplayName="CPI Service"
+    Version="5.4.100.1496"
+    Hostname="cpi01.mselect.wmt06016-a.symbotic"
+    Location="N/A"
+    IsActive="True" />
+</StackDefinition>
