@@ -1,7 +1,7 @@
-This repository contains the work I did for a previous employer to automate the software release process. I wrote everything in PowerShell and split them up into modules for each step of the process.
+This repo is a copy of the files that I developed, maintained, tested and owned while working with my previous employer. The goal of this work was to automate the software release process at the time, which was being done completely manually. My goal was to avoid reliance on people as much as possible, in order to minimize the possibility of human error. This project contained many firsts for me. It was my first time working with/learning PowerShell. It was also my first timen working with YAML and XML as well. Working on this project allowed me to obtain a basic understanding of working with YAML and XML files and, I believe, become proficient in PowerShell.
 
-## Summary
-The following is all of the modules and a description of their function, in the order they would be run during the automated process.
+## Breakdown
+The following is all of the modules and a general description of their function, in the order they would be run during the automated process.
 
 ### Read-ReleaseEmail.ps1
 Software releases were distributed via a release email that contained the changed software components. This script is given the subject line of that email, reads the email, collects the installer files and creates a CSV file with the names of the components that are being changed and the new version numbers. 

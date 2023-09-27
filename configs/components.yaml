@@ -2,102 +2,101 @@
 
 ---
 
-# new SiteConfigs version
+
 newSiteConfigsVersion: 
-# the folder containing the previous version of the Startup Tool XML
 oldVersion: !!str 
 components:
-    # Baker Service V
-    - name: Baker
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: baker01
-        service_name: Symbotic Baker Service {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # Case Parameter Input Service V
-    - name: Case Parameter Input
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         server:
           type: service
-          vm: cpi01
-          service_name: Symbotic Case Parameter Input {0}
+          vm: <vm_to_download_to>
+          service_name: <templated_service_name>
         # configs for client app
         client:
           type: app
-          vm: teach01
-          appDestination: C:\Users\teachinuser\Desktop
-          path: C:\Program Files\Symbotic\Case Parameter Input {0}\Client
+          vm: <vm_to_download_to>
+          appDestination: /path/to/destination
+          path: <templated_path_to_download_location>
 
-    # Case Storage Service V
-    - name: Case Storage Service
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: sre01
-        service_name: Symbotic Case Storage Service {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # Control Center V
-    - name: ControlCenter
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: localhost
-        appDestination: C:\Users\ccuser\Desktop
-        path: C:\Program Files\Symbotic\Control Center {0}
+        vm: <vm_to_download_to>
+        appDestination: /path/to/destination
+        path: <templated_path_to_download_location>
 
-    # Data Services V
-    - name: Data Services
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: ods01
-        service_name: Symbotic Data Services {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # Messaging Proxy V
-    - name: MessagingProxy
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: toaster01
-        path: E:\Program Files\Symbotic\Messaging Proxy {0}
+        vm: <vm_to_download_to>
+        path: <templated_path_to_download_location>
         options: -disableOnly
 
-    # Pallet Build Planner Service V
-    - name: Pallet Build Planner
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: multiple
-        service_name: Symbotic Pallet Build Planner {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # Pallet Sequencer Service V
-    - name: Pallet Sequencer
+    # component name
+    - name: <component_name>
       changed:
       version:
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: pseq01
-        service_name: Symbotic Pallet Sequencer {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # System Manager Inbound Service V
-    - name: System Manager Inbound
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       Agent:
@@ -106,11 +105,11 @@ components:
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: sm01
-        service_name: Symbotic System Manager Inbound {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # System manager Outbound Service V
-    - name: System Manager Outbound
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       Agent:
@@ -119,89 +118,89 @@ components:
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: sm01
-        service_name: Symbotic System Manager Outbound {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
-    # Toaster V
-    - name: Toaster
+    # component name
+    - name: <component_name>
       changed:
       version:
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: toaster01
-        service_name: Symbotic Data Toaster {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
 
     # ------------------- Non-Startup Tool Components -------------------
-    # Bot Saver V
-    - name: Bot Saver
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: sre01
-        appDestination: C:\Users\ccuser\Desktop
-        path: C:\Program Files\Symbotic\Bot Saver {0} # E: drive for production
+        vm: <vm_to_download_to>
+        appDestination: /path/to/destination
+        path: <templated_path_to_download_location>
 
-    # Cell Gateways V
-    - name: Cell Gateway
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        service_name: Symbotic Cell Gateway Service {0} (Instance 1)
+        service_name: <templated_service_name>(Instance 1)
 
-    # DepalUI  V
-    - name: Depalletization User Interface
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: depalui01
-        path: E:\Program Files\Symbotic\Depalletization User Interfaces {0}\ConfiguredUIs\DualManual {1}
-        shortcut_name: Symbotic {0} Depal UI
+        vm: <vm_to_download_to>
+        path: <templated_path_to_download_location>
+        shortcut_name: <templated_service_name>
         first_app:
-          name: MIB102
-          appDestination: C:\Users\depalui04_svc\Desktop
+          name: <component_name>
+          appDestination: /path/to/destination
         second_app:
-          name: MIB106
-          appDestination: C:\Users\depalui01_svc\Desktop
+          name: <component_name>
+          appDestination: /path/to/destination
 
-    # Integration Manager V
-    - name: Integration Manager
+    # component name
+    - name: <component_name>
       changed: 
       version: !!str
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: service
-        vm: im01
-        service_name: Symbotic Integration Manager Core {0}
+        vm: <vm_to_download_to>
+        service_name: <templated_service_name>
       symlink:
         location: E:\Program Files\Symbotic\Integration Manager {0}
-        symlink_name: SiteConfigs
+        symlink_name: <templated_service_name>
         target: E:\SiteConfigs {0}
 
-    # Label Inquiry V
-    - name: Label Inquiry UI
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: multiple
-        appDestination: C:\Users\liuiuser\Desktop
-        path: C:\Program Files\Symbotic\Label Inquiry Application {0}
+        vm: <vm_to_download_to>
+        appDestination: /path/to/destination
+        path: <templated_path_to_download_location>
 
-    # Pallet Plan Viewer V
-    - name: Pallet Plan Viewer
+    # component name
+    - name: <component_name>
       changed: 
       version: 
       # DO NOT CHANGE ANYTHING UNDER THIS COMMENT
       configs:
         type: app
-        vm: obdisplay01
-        appDestination: C:\Users\Administrator\Desktop
-        path: C:\Program Files\Symbotic\Pallet Plan Viewer {0} # E: for production
+        vm: <vm_to_download_to>
+        appDestination: /path/to/destination
+        path: <templated_path_to_download_location>
